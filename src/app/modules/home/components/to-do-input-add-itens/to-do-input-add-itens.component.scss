@@ -1,0 +1,27 @@
+@import '../../../../../dist/scss/variables.scss';
+
+// Referencio o componente do input de adição de tarefas
+:host {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+
+  input{
+    width: 80%;
+
+    border: none;
+    background: $tertiary-background-color;
+
+    font-size: 16px;
+    color: $secondary-text-color;
+    text-align: center;
+
+    padding: 10px;
+    // Evita que o elemente sofra alteração dimensional, caso seja incluído um padding
+    box-sizing: border-box;
+
+    &::placeholder{
+      color: $secondary-text-color;
+    }
+  }
+}
