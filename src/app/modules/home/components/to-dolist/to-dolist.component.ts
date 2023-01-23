@@ -10,17 +10,15 @@ import { TaskList } from '../../model/task-list';
 })
 export class ToDolistComponent implements DoCheck {
 
-  public taskList: Array<TaskList> = [
-    // { task: "Minha nova task", checked: true },
-    // { task: "Minha nova task2", checked: false }
-  ];
+  // Aqui acontece o contrário, converte-se para um objeto
+  public taskList: Array<TaskList> = JSON.parse(localStorage.getItem("list") || '[]');
 
   constructor() {}
 
   // Posicionar nas últimas posições os itens marcados como checked, ou seja, concluídos
   ngDoCheck(): void {
-      this.taskList.sort((fist, last) => Number(fist.checked) - Number(last.checked))
-  }
+    this.setLocalStorage()
+}
 
   public deleteItemTaskList(index: number) {
     this.taskList.splice(index, 1);
@@ -43,9 +41,17 @@ export class ToDolistComponent implements DoCheck {
 
     if (!task.length) {
       const confirm = window.confirm("A tarefa está vazia, deseja deletar?")
-      
+
     if (confirm)
     this.deleteItemTaskList(index)
+  }
+  }
+
+  public setLocalStorage() {
+    if (this.taskList) {
+      this.taskList.sort((fist, last) => Number(fist.checked) - Number(last.checked))
+      // Lembrete: converter para string
+      localStorage.setItem("list", JSON.stringify(this.taskList))
   }
   }
 
