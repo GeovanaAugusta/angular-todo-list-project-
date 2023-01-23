@@ -16,5 +16,5 @@
 
 
 <!-- Mais lógico input + botão delete dentro do meu container com a listagem de tarefas-->
-<app-to-do-input-add-itens></app-to-do-input-add-itens>
+<app-to-do-input-add-itens (emitItemTaskList)="setEmitTaskList($event)"></app-to-do-input-add-itens>
 <app-to-do-button-delete-all *ngIf="taskList.length" (click)="deleteAllTaskList()"></app-to-do-button-delete-all>

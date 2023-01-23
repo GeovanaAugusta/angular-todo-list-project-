@@ -33,4 +33,11 @@ export class ToDolistComponent implements OnInit {
     this.taskList = [];
   }
 
+  public setEmitTaskList(task: string) {
+    console.log(task);
+    this.taskList.push({task: task, checked: false});
+
+
+  }
+
 }
