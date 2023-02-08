@@ -34,7 +34,7 @@ ng serve
 
 ## Rodando pelo Vercel
 
-- Se preferir, entre no link <a href="https://autenticacao-login-angular.vercel.app" target="_blank">aqui</a> e aproveite a lista de tarefas.
+- Se preferir, entre no link <a href="https://todo-list-project-angular.vercel.app/" target="_blank">aqui</a> e aproveite a lista de tarefas.
 
 
 
