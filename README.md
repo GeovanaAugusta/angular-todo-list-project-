@@ -1,17 +1,41 @@
-# App To Do List
+# Lista de Tarefas
 
-O projeto é gerado usando [Angular CLI](https://github.com/angular/angular-cli) versão 15.1.1. 
+Neste projeto foi desenvolvida uma lista de tarefas utilizando [Angular CLI](https://github.com/angular/angular-cli) versão 15.1.1, de maneira à reforçar os básicos e cruciais conceitos do framework.
 
-É um projeto muito importante para consolidar a parte básica do framework, portanto, no mesmo foi feito o CRUD de uma lista de tarefas reforçando os principais conceitos.
+## Habilidades
 
-## Servidor de Desenvolvimento
+- CRUD através do uso do HttpClient e outros módulos;
 
-Para iniciar a aplicação rode `ng serve` e navegue para `http://localhost:4200/`. 
-A aplicação será automaticamente atualizada caso atualize algum arquivo.
+- Data Binding;
 
-## Estrutura de código
+- Diretivas de Atributos e Estruturais;
 
-Rode `ng generate component nome-do-componente` para gerar um novo componente. Há a possibilidade também de se usar para gerar outro itens, basta usar o ng generate juntamente do que deseja gerar: `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Ciclos de Vida no Angular.
+
+## Instruções Gerais
+
+- Clone o repositório
+
+ `git@github.com:GeovanaAugusta/todo-list-project-angular.git`.
+ 
+ - Entre na pasta do repositório que você acabou de clonar:
+    
+ `cd todo-list-project-angular
+`
+
+## Rodando localmente
+
+- Instale as dependências e inicie a aplicação que rodará na porta 4200:
+
+``` bash
+npm install
+ng serve
+```
+
+## Rodando pelo Vercel
+
+- Se preferir, entre no link <a href="https://autenticacao-login-angular.vercel.app" target="_blank">aqui</a> e aproveite a lista de tarefas.
+
 
 
 
